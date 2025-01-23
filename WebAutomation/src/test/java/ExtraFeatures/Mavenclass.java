@@ -33,12 +33,12 @@ public class Mavenclass {
 		/*DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setAcceptInsecureCerts(true);*/
 		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("start-maximized");
+		ChromeOptions options = new ChromeOptions();  // Desired capabilities in selenium WebDriver for Chrome
+		options.addArguments("start-maximized");      // opens Chrome browser in maximized mode
 		Thread.sleep(2000);
-		/*options.addArguments("incognito");
+		/*options.addArguments("incognito");		// opens Chrome browser in incognito mode
 		Thread.sleep(2000);
-		options.addArguments("--headless");
+		options.addArguments("--headless");		 // open the Chrome browser in headless mode.
 		Thread.sleep(2000);*/
 		options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 		
